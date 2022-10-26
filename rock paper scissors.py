@@ -85,3 +85,5 @@ while True:
         print(paper_design + 'vs.' + scissors_design + '\nYou won!')
         user_wins += 1
 print(f'wins: {user_wins}\nlosses: {computer_wins}\ndraws: {draws}')
+
+
