@@ -45,12 +45,10 @@ while True:
 
 # The computer will randomly rock paper or scissors from table a. It will print what the computer drew.
     comp_action = random.choice(a)
-    print('You chose ' + user_input + ' and the computer chose ' + comp_action + '!')
 
-
-# Defines what wins/loses and ties. Each win adds a point. Ties are neutral.
+# Defines what wins/loses and ties. Each win adds a point. Ties are neutral but still tallied anyway.
     if comp_action == 'rock' and user_input == 'rock':
-        print(rock_design + 'vs.' + rock_design + '\nIt was a draw :/')
+        print(rock_design + '\nvs.' + rock_design + '\nIt was a draw :/')
         draws += 1
 
     elif comp_action == 'paper' and user_input == 'paper':
@@ -84,6 +82,5 @@ while True:
     elif comp_action == 'paper' and user_input == 'scissors':
         print(paper_design + 'vs.' + scissors_design + '\nYou won!')
         user_wins += 1
+
 print(f'wins: {user_wins}\nlosses: {computer_wins}\ndraws: {draws}')
-
-
