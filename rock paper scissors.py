@@ -72,15 +72,15 @@ while True:
         computer_wins += 1
 
     elif comp_action == 'rock' and user_input == 'paper':
-        print(rock_design + 'vs.' + paper_design + '\nYou won!')
+        print(rock_design + '\nvs.' + paper_design + '\nYou won!')
         user_wins += 1
 
     elif comp_action == 'scissors' and user_input == 'rock':
-        print(scissors_design + 'vs.' + rock_design + '\nYou won!')
+        print(scissors_design + '\nvs.' + rock_design + '\nYou won!')
         user_wins += 1
 
     elif comp_action == 'paper' and user_input == 'scissors':
-        print(paper_design + 'vs.' + scissors_design + '\nYou won!')
+        print(paper_design + '\nvs.' + scissors_design + '\nYou won!')
         user_wins += 1
 
 print(f'wins: {user_wins}\nlosses: {computer_wins}\ndraws: {draws}')
